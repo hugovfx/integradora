@@ -16,31 +16,37 @@
 
 <body>
     <header class="header">
-        <h3 class="tit1">tianguis utch</h3>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo center">Tianguis UTCH</a>
+            </div>
+        </nav>
     </header>
-    <main>
-        <div class="content1">
-            <h1>Iniciar Sesion</h1>
-            <label for="correo">
-                <h4>Correo</h4>
-            </label>
-            <input type="email" placeholder="example@example.com" id="correo" class="inputs">
-            <label for="pass">
-                <h4>Contraseña</h4>
-            </label>
-            <input type="password" placeholder="********" id="pass" class="inputs">
-            <br>
-            <br>
-            <input type="submit" value="Iniciar Sesion" class="boton">
-        </div>
-        <div class="imagen">
-            <img src="imgs/cazadorNW.png" alt="Cazadores Logotipo" class="img1">
+    <main class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <h1 class="center-align">Iniciar Sesion</h1>
+                <div class="input-field">
+                    <input type="email" id="correo" class="validate">
+                    <label for="correo">Correo</label>
+                </div>
+                <div class="input-field">
+                    <input type="password" id="pass" class="validate">
+                    <label for="pass">Contraseña</label>
+                </div>
+                <div class="center-align">
+                    <button class="btn waves-effect waves-light" type="submit" name="action">Iniciar Sesion
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+            <div class="col s12 m6 center-align">
+                <img src="imgs/cazadorNW.png" alt="Cazadores Logotipo" class="responsive-img">
+            </div>
         </div>
     </main>
 
-
-
+    <!--JavaScript at end of body for optimized loading-->
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
-  <!--JavaScript at end of body for optimized loading-->
-  <script type="text/javascript" src="js/materialize.min.js"></script>
 </html>
